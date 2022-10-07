@@ -258,7 +258,6 @@
             this.Panel_Title.Name = "Panel_Title";
             this.Panel_Title.Size = new System.Drawing.Size(176, 172);
             this.Panel_Title.TabIndex = 2;
-            this.Panel_Title.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
@@ -317,21 +316,21 @@
             // Panel_Contuner
             // 
             this.Panel_Contuner.BackColor = System.Drawing.Color.White;
-            this.Panel_Contuner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_Contuner.Location = new System.Drawing.Point(0, 0);
+            this.Panel_Contuner.Location = new System.Drawing.Point(0, 48);
             this.Panel_Contuner.Name = "Panel_Contuner";
-            this.Panel_Contuner.Size = new System.Drawing.Size(1146, 720);
+            this.Panel_Contuner.Size = new System.Drawing.Size(1146, 672);
             this.Panel_Contuner.TabIndex = 3;
             // 
             // Panel_Top
             // 
+            this.Panel_Top.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.Panel_Top.Controls.Add(this.lblTitleName);
             this.Panel_Top.Controls.Add(this.ptnNotification);
             this.Panel_Top.Controls.Add(this.ptnMin);
             this.Panel_Top.Controls.Add(this.ptnMix);
             this.Panel_Top.Controls.Add(this.ptnExit);
-            this.Panel_Top.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Top.Location = new System.Drawing.Point(0, 0);
             this.Panel_Top.Name = "Panel_Top";
             this.Panel_Top.Size = new System.Drawing.Size(1146, 48);
@@ -366,6 +365,7 @@
             this.ptnMin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.ptnMin.Size = new System.Drawing.Size(38, 36);
             this.ptnMin.TabIndex = 7;
+            this.ptnMin.Click += new System.EventHandler(this.ptnMin_Click);
             // 
             // ptnMix
             // 
@@ -375,6 +375,7 @@
             this.ptnMix.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.ptnMix.Size = new System.Drawing.Size(38, 36);
             this.ptnMix.TabIndex = 6;
+            this.ptnMix.Click += new System.EventHandler(this.ptnMix_Click);
             // 
             // ptnExit
             // 
@@ -384,6 +385,7 @@
             this.ptnExit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.ptnExit.Size = new System.Drawing.Size(38, 36);
             this.ptnExit.TabIndex = 5;
+            this.ptnExit.Click += new System.EventHandler(this.ptnExit_Click_1);
             // 
             // bunifuDragControl1
             // 

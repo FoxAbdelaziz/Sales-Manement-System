@@ -16,5 +16,10 @@ namespace Sales_Manement_System.PL
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
