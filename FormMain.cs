@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Sales_Manement_System.PL;
 
 // last Open System 07-10-2022 , 7.35 PM 
 
@@ -20,6 +20,8 @@ namespace Sales_Manement_System
         {
             InitializeComponent();
         }
+        FormHome H = new FormHome();
+        FormCategory C = new FormCategory();
 
     
 
@@ -60,8 +62,25 @@ namespace Sales_Manement_System
                 Panel_Navbar.Width = 220;
                 Panel_Title.Visible = true;
                 Panel_Title.Height = 172;
-
             }
+        }
+
+        private void ptnHome_Click(object sender, EventArgs e)
+        {
+            Panel_Contuner.Controls.Clear();
+            Panel_Contuner.Controls.Add(H.panelHome);
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            Panel_Contuner.Controls.Clear();
+            Panel_Contuner.Controls.Add(H.panelHome);
+        }
+
+        private void ptnCategory_Click(object sender, EventArgs e)
+        {
+            Panel_Contuner.Controls.Clear();
+            Panel_Contuner.Controls.Add(C.panelCategory);
         }
     }
 }

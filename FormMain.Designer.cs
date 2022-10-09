@@ -32,15 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.Panel_Navbar = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnHome = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnCategory = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnSuppliers = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnPurchasing = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnCustomers = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnSales = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnReport = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnUsers = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnSetting = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Panel_Title = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -78,15 +78,15 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton2);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton3);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton4);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton5);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton6);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton7);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton8);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton9);
-            this.flowLayoutPanel1.Controls.Add(this.simpleButton10);
+            this.flowLayoutPanel1.Controls.Add(this.ptnHome);
+            this.flowLayoutPanel1.Controls.Add(this.ptnCategory);
+            this.flowLayoutPanel1.Controls.Add(this.ptnSuppliers);
+            this.flowLayoutPanel1.Controls.Add(this.ptnPurchasing);
+            this.flowLayoutPanel1.Controls.Add(this.ptnCustomers);
+            this.flowLayoutPanel1.Controls.Add(this.ptnSales);
+            this.flowLayoutPanel1.Controls.Add(this.ptnReport);
+            this.flowLayoutPanel1.Controls.Add(this.ptnUsers);
+            this.flowLayoutPanel1.Controls.Add(this.ptnSetting);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 172);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -94,149 +94,151 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(220, 548);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
-            // simpleButton2
+            // ptnHome
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton2.Location = new System.Drawing.Point(10, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton2.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton2.TabIndex = 14;
-            this.simpleButton2.Text = "الرئيسية";
+            this.ptnHome.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnHome.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnHome.Appearance.Options.UseFont = true;
+            this.ptnHome.Appearance.Options.UseForeColor = true;
+            this.ptnHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.ptnHome.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnHome.Location = new System.Drawing.Point(10, 3);
+            this.ptnHome.Name = "ptnHome";
+            this.ptnHome.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnHome.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnHome.Size = new System.Drawing.Size(207, 36);
+            this.ptnHome.TabIndex = 14;
+            this.ptnHome.Text = "الرئيسية";
+            this.ptnHome.Click += new System.EventHandler(this.ptnHome_Click);
             // 
-            // simpleButton3
+            // ptnCategory
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton3.Location = new System.Drawing.Point(10, 45);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton3.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton3.TabIndex = 15;
-            this.simpleButton3.Text = "الأصناف";
+            this.ptnCategory.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnCategory.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnCategory.Appearance.Options.UseFont = true;
+            this.ptnCategory.Appearance.Options.UseForeColor = true;
+            this.ptnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.ptnCategory.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnCategory.Location = new System.Drawing.Point(10, 45);
+            this.ptnCategory.Name = "ptnCategory";
+            this.ptnCategory.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnCategory.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnCategory.Size = new System.Drawing.Size(207, 36);
+            this.ptnCategory.TabIndex = 15;
+            this.ptnCategory.Text = "الأصناف";
+            this.ptnCategory.Click += new System.EventHandler(this.ptnCategory_Click);
             // 
-            // simpleButton4
+            // ptnSuppliers
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Appearance.Options.UseForeColor = true;
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton4.Location = new System.Drawing.Point(10, 87);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton4.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton4.TabIndex = 16;
-            this.simpleButton4.Text = "الموردين";
+            this.ptnSuppliers.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnSuppliers.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnSuppliers.Appearance.Options.UseFont = true;
+            this.ptnSuppliers.Appearance.Options.UseForeColor = true;
+            this.ptnSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.ptnSuppliers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnSuppliers.Location = new System.Drawing.Point(10, 87);
+            this.ptnSuppliers.Name = "ptnSuppliers";
+            this.ptnSuppliers.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnSuppliers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnSuppliers.Size = new System.Drawing.Size(207, 36);
+            this.ptnSuppliers.TabIndex = 16;
+            this.ptnSuppliers.Text = "الموردين";
             // 
-            // simpleButton5
+            // ptnPurchasing
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.simpleButton5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton5.Location = new System.Drawing.Point(10, 129);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton5.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton5.TabIndex = 17;
-            this.simpleButton5.Text = "المشتريات";
+            this.ptnPurchasing.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnPurchasing.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnPurchasing.Appearance.Options.UseFont = true;
+            this.ptnPurchasing.Appearance.Options.UseForeColor = true;
+            this.ptnPurchasing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.ptnPurchasing.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnPurchasing.Location = new System.Drawing.Point(10, 129);
+            this.ptnPurchasing.Name = "ptnPurchasing";
+            this.ptnPurchasing.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnPurchasing.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnPurchasing.Size = new System.Drawing.Size(207, 36);
+            this.ptnPurchasing.TabIndex = 17;
+            this.ptnPurchasing.Text = "المشتريات";
             // 
-            // simpleButton6
+            // ptnCustomers
             // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Appearance.Options.UseForeColor = true;
-            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton6.Location = new System.Drawing.Point(10, 171);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton6.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton6.TabIndex = 18;
-            this.simpleButton6.Text = "العملاء";
+            this.ptnCustomers.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnCustomers.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnCustomers.Appearance.Options.UseFont = true;
+            this.ptnCustomers.Appearance.Options.UseForeColor = true;
+            this.ptnCustomers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.ptnCustomers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnCustomers.Location = new System.Drawing.Point(10, 171);
+            this.ptnCustomers.Name = "ptnCustomers";
+            this.ptnCustomers.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnCustomers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnCustomers.Size = new System.Drawing.Size(207, 36);
+            this.ptnCustomers.TabIndex = 18;
+            this.ptnCustomers.Text = "العملاء";
             // 
-            // simpleButton7
+            // ptnSales
             // 
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Appearance.Options.UseForeColor = true;
-            this.simpleButton7.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
-            this.simpleButton7.Location = new System.Drawing.Point(10, 213);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton7.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton7.TabIndex = 19;
-            this.simpleButton7.Text = "المبيعات";
+            this.ptnSales.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnSales.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnSales.Appearance.Options.UseFont = true;
+            this.ptnSales.Appearance.Options.UseForeColor = true;
+            this.ptnSales.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
+            this.ptnSales.Location = new System.Drawing.Point(10, 213);
+            this.ptnSales.Name = "ptnSales";
+            this.ptnSales.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnSales.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnSales.Size = new System.Drawing.Size(207, 36);
+            this.ptnSales.TabIndex = 19;
+            this.ptnSales.Text = "المبيعات";
             // 
-            // simpleButton8
+            // ptnReport
             // 
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton8.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Appearance.Options.UseForeColor = true;
-            this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
-            this.simpleButton8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton8.Location = new System.Drawing.Point(10, 255);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton8.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton8.TabIndex = 20;
-            this.simpleButton8.Text = "التقارير";
+            this.ptnReport.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnReport.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnReport.Appearance.Options.UseFont = true;
+            this.ptnReport.Appearance.Options.UseForeColor = true;
+            this.ptnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.ptnReport.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnReport.Location = new System.Drawing.Point(10, 255);
+            this.ptnReport.Name = "ptnReport";
+            this.ptnReport.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnReport.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnReport.Size = new System.Drawing.Size(207, 36);
+            this.ptnReport.TabIndex = 20;
+            this.ptnReport.Text = "التقارير";
             // 
-            // simpleButton9
+            // ptnUsers
             // 
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.Appearance.Options.UseForeColor = true;
-            this.simpleButton9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
-            this.simpleButton9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton9.Location = new System.Drawing.Point(10, 297);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton9.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton9.TabIndex = 21;
-            this.simpleButton9.Text = "المستخدمين";
+            this.ptnUsers.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnUsers.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnUsers.Appearance.Options.UseFont = true;
+            this.ptnUsers.Appearance.Options.UseForeColor = true;
+            this.ptnUsers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            this.ptnUsers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnUsers.Location = new System.Drawing.Point(10, 297);
+            this.ptnUsers.Name = "ptnUsers";
+            this.ptnUsers.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnUsers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnUsers.Size = new System.Drawing.Size(207, 36);
+            this.ptnUsers.TabIndex = 21;
+            this.ptnUsers.Text = "المستخدمين";
             // 
-            // simpleButton10
+            // ptnSetting
             // 
-            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton10.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton10.Appearance.Options.UseFont = true;
-            this.simpleButton10.Appearance.Options.UseForeColor = true;
-            this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
-            this.simpleButton10.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton10.Location = new System.Drawing.Point(10, 339);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.simpleButton10.Size = new System.Drawing.Size(207, 36);
-            this.simpleButton10.TabIndex = 22;
-            this.simpleButton10.Text = "الاعدادات";
+            this.ptnSetting.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnSetting.Appearance.ForeColor = System.Drawing.Color.White;
+            this.ptnSetting.Appearance.Options.UseFont = true;
+            this.ptnSetting.Appearance.Options.UseForeColor = true;
+            this.ptnSetting.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.ptnSetting.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.ptnSetting.Location = new System.Drawing.Point(10, 339);
+            this.ptnSetting.Name = "ptnSetting";
+            this.ptnSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.ptnSetting.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ptnSetting.Size = new System.Drawing.Size(207, 36);
+            this.ptnSetting.TabIndex = 22;
+            this.ptnSetting.Text = "الاعدادات";
             // 
             // panel1
             // 
@@ -408,6 +410,7 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales Managemetn System ";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.Panel_Navbar.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -429,15 +432,15 @@
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.SimpleButton ptnCollapse;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton ptnHome;
+        private DevExpress.XtraEditors.SimpleButton ptnCategory;
+        private DevExpress.XtraEditors.SimpleButton ptnSuppliers;
+        private DevExpress.XtraEditors.SimpleButton ptnPurchasing;
+        private DevExpress.XtraEditors.SimpleButton ptnCustomers;
+        private DevExpress.XtraEditors.SimpleButton ptnSales;
+        private DevExpress.XtraEditors.SimpleButton ptnReport;
+        private DevExpress.XtraEditors.SimpleButton ptnUsers;
+        private DevExpress.XtraEditors.SimpleButton ptnSetting;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel Panel_Title;
         private System.Windows.Forms.Panel Panel_Contuner;
