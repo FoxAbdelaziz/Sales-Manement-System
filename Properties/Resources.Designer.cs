@@ -63,6 +63,16 @@ namespace Sales_Manement_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3209336_flag_goal_important_outstanding_wave_icon {
+            get {
+                object obj = ResourceManager.GetObject("3209336_flag_goal_important_outstanding_wave_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download__1_ {
             get {
                 object obj = ResourceManager.GetObject("download (1)", resourceCulture);
@@ -136,6 +146,26 @@ namespace Sales_Manement_System.Properties {
         internal static System.Drawing.Bitmap minister_log_En1 {
             get {
                 object obj = ResourceManager.GetObject("minister-log-En1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notification {
+            get {
+                object obj = ResourceManager.GetObject("notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_flag_icon_free_of_entypo_icons_766153 {
+            get {
+                object obj = ResourceManager.GetObject("small-flag-icon-free-of-entypo-icons-766153", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

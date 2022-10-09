@@ -100,7 +100,7 @@
             this.ptnHome.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnHome.Appearance.Options.UseFont = true;
             this.ptnHome.Appearance.Options.UseForeColor = true;
-            this.ptnHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.ptnHome.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnHome.ImageOptions.Image")));
             this.ptnHome.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnHome.Location = new System.Drawing.Point(10, 3);
             this.ptnHome.Name = "ptnHome";
@@ -117,7 +117,7 @@
             this.ptnCategory.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnCategory.Appearance.Options.UseFont = true;
             this.ptnCategory.Appearance.Options.UseForeColor = true;
-            this.ptnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.ptnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnCategory.ImageOptions.Image")));
             this.ptnCategory.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnCategory.Location = new System.Drawing.Point(10, 45);
             this.ptnCategory.Name = "ptnCategory";
@@ -134,7 +134,7 @@
             this.ptnSuppliers.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnSuppliers.Appearance.Options.UseFont = true;
             this.ptnSuppliers.Appearance.Options.UseForeColor = true;
-            this.ptnSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.ptnSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnSuppliers.ImageOptions.Image")));
             this.ptnSuppliers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnSuppliers.Location = new System.Drawing.Point(10, 87);
             this.ptnSuppliers.Name = "ptnSuppliers";
@@ -150,7 +150,7 @@
             this.ptnPurchasing.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnPurchasing.Appearance.Options.UseFont = true;
             this.ptnPurchasing.Appearance.Options.UseForeColor = true;
-            this.ptnPurchasing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.ptnPurchasing.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnPurchasing.ImageOptions.Image")));
             this.ptnPurchasing.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnPurchasing.Location = new System.Drawing.Point(10, 129);
             this.ptnPurchasing.Name = "ptnPurchasing";
@@ -166,7 +166,7 @@
             this.ptnCustomers.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnCustomers.Appearance.Options.UseFont = true;
             this.ptnCustomers.Appearance.Options.UseForeColor = true;
-            this.ptnCustomers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.ptnCustomers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnCustomers.ImageOptions.Image")));
             this.ptnCustomers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnCustomers.Location = new System.Drawing.Point(10, 171);
             this.ptnCustomers.Name = "ptnCustomers";
@@ -183,7 +183,7 @@
             this.ptnSales.Appearance.Options.UseFont = true;
             this.ptnSales.Appearance.Options.UseForeColor = true;
             this.ptnSales.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.ptnSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
+            this.ptnSales.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ptnSales.ImageOptions.SvgImage")));
             this.ptnSales.Location = new System.Drawing.Point(10, 213);
             this.ptnSales.Name = "ptnSales";
             this.ptnSales.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
@@ -198,7 +198,7 @@
             this.ptnReport.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnReport.Appearance.Options.UseFont = true;
             this.ptnReport.Appearance.Options.UseForeColor = true;
-            this.ptnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.ptnReport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnReport.ImageOptions.Image")));
             this.ptnReport.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnReport.Location = new System.Drawing.Point(10, 255);
             this.ptnReport.Name = "ptnReport";
@@ -214,7 +214,7 @@
             this.ptnUsers.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnUsers.Appearance.Options.UseFont = true;
             this.ptnUsers.Appearance.Options.UseForeColor = true;
-            this.ptnUsers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            this.ptnUsers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnUsers.ImageOptions.Image")));
             this.ptnUsers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnUsers.Location = new System.Drawing.Point(10, 297);
             this.ptnUsers.Name = "ptnUsers";
@@ -230,7 +230,7 @@
             this.ptnSetting.Appearance.ForeColor = System.Drawing.Color.White;
             this.ptnSetting.Appearance.Options.UseFont = true;
             this.ptnSetting.Appearance.Options.UseForeColor = true;
-            this.ptnSetting.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.ptnSetting.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnSetting.ImageOptions.Image")));
             this.ptnSetting.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.ptnSetting.Location = new System.Drawing.Point(10, 339);
             this.ptnSetting.Name = "ptnSetting";
