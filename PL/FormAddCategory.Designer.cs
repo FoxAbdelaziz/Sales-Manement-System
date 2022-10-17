@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddCategory));
             this.ptnExit = new DevExpress.XtraEditors.SimpleButton();
             this.lblTitleName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.picCategory = new DevExpress.XtraEditors.PictureEdit();
+            this.ptnAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.ptnClose = new DevExpress.XtraEditors.SimpleButton();
+            this.dxErrorProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.picCategory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxErrorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ptnExit
@@ -46,6 +51,7 @@
             this.ptnExit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.ptnExit.Size = new System.Drawing.Size(38, 36);
             this.ptnExit.TabIndex = 6;
+            this.ptnExit.Click += new System.EventHandler(this.ptnExit_Click);
             // 
             // lblTitleName
             // 
@@ -59,45 +65,54 @@
             this.lblTitleName.TabIndex = 10;
             this.lblTitleName.Text = "اسم الصنف";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(43, 72);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 32);
-            this.textBox1.TabIndex = 12;
+            this.txtName.Location = new System.Drawing.Point(43, 72);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(267, 32);
+            this.txtName.TabIndex = 12;
             // 
-            // pictureEdit1
+            // picCategory
             // 
-            this.pictureEdit1.EditValue = global::Sales_Manement_System.Properties.Resources.images__1_;
-            this.pictureEdit1.Location = new System.Drawing.Point(43, 110);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Size = new System.Drawing.Size(267, 157);
-            this.pictureEdit1.TabIndex = 14;
+            this.picCategory.EditValue = global::Sales_Manement_System.Properties.Resources.images__1_;
+            this.picCategory.Location = new System.Drawing.Point(43, 110);
+            this.picCategory.Name = "picCategory";
+            this.picCategory.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picCategory.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picCategory.Size = new System.Drawing.Size(267, 157);
+            this.picCategory.TabIndex = 14;
             // 
-            // simpleButton1
+            // ptnAdd
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(202, 285);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(145, 50);
-            this.simpleButton1.TabIndex = 15;
-            this.simpleButton1.Text = "اضافة صنف";
+            this.ptnAdd.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnAdd.Appearance.Options.UseFont = true;
+            this.ptnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnAdd.ImageOptions.Image")));
+            this.ptnAdd.Location = new System.Drawing.Point(202, 285);
+            this.ptnAdd.Name = "ptnAdd";
+            this.ptnAdd.Size = new System.Drawing.Size(145, 50);
+            this.ptnAdd.TabIndex = 15;
+            this.ptnAdd.Text = "اضافة صنف";
+            this.ptnAdd.Click += new System.EventHandler(this.ptnAdd_Click);
             // 
-            // simpleButton2
+            // ptnClose
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(12, 285);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(145, 50);
-            this.simpleButton2.TabIndex = 16;
-            this.simpleButton2.Text = "الغاء";
+            this.ptnClose.Appearance.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ptnClose.Appearance.Options.UseFont = true;
+            this.ptnClose.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ptnClose.ImageOptions.Image")));
+            this.ptnClose.Location = new System.Drawing.Point(12, 285);
+            this.ptnClose.Name = "ptnClose";
+            this.ptnClose.Size = new System.Drawing.Size(145, 50);
+            this.ptnClose.TabIndex = 16;
+            this.ptnClose.Text = "الغاء";
+            // 
+            // dxErrorProvider1
+            // 
+            this.dxErrorProvider1.ContainerControl = this;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FormAddCategory
             // 
@@ -105,10 +120,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(359, 347);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.pictureEdit1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ptnClose);
+            this.Controls.Add(this.ptnAdd);
+            this.Controls.Add(this.picCategory);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblTitleName);
             this.Controls.Add(this.ptnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,7 +131,9 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCategory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxErrorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,9 +143,11 @@
 
         private DevExpress.XtraEditors.SimpleButton ptnExit;
         private System.Windows.Forms.Label lblTitleName;
-        private System.Windows.Forms.TextBox textBox1;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.TextBox txtName;
+        private DevExpress.XtraEditors.PictureEdit picCategory;
+        private DevExpress.XtraEditors.SimpleButton ptnClose;
+        public DevExpress.XtraEditors.SimpleButton ptnAdd;
+        private DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider dxErrorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

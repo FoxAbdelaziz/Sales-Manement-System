@@ -16,7 +16,7 @@ namespace Sales_Manement_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EPL.FormToast());
+            Application.Run(new FormMain());
         }
     }
 }
